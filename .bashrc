@@ -120,7 +120,7 @@ fi
 export TERM=xterm-256color
 
 # I hate writing
-alias update="sudo apt-get -y update > /dev/null; sudo apt-get -y upgrade"
+alias update="sudo apt-get -y update > /dev/null && sudo apt-get -y upgrade"
 alias QOTD="nc mir.intstl.com 17"
 
 . /usr/share/powerline/bindings/bash/powerline.sh
