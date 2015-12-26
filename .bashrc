@@ -122,7 +122,10 @@ export TERM=xterm-256color
 # I hate writing
 alias update="sudo apt-get -y update > /dev/null && sudo apt-get -y upgrade"
 alias QOTD="nc mir.intstl.com 17"
+alias ssh-cv="ssh -X pi@elysiumCV.local"
 
 . /usr/share/powerline/bindings/bash/powerline.sh
 
 export EDITOR='vim'
+
+eval "$(beet completion)"
