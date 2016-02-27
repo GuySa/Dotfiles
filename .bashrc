@@ -122,10 +122,15 @@ export TERM=xterm-256color
 # I hate writing
 alias update="sudo apt-get -y update > /dev/null && sudo apt-get -y upgrade"
 alias QOTD="nc mir.intstl.com 17"
-alias ssh-cv="ssh -X pi@elysiumCV.local"
+alias connect_to_pi="ssh -X pi@elysiumCV1.local"
+alias sleep_random_time='echo `awk -v num=$RANDOM "BEGIN { print (num / 10000) }"` | xargs -i bash -c "echo sleeping {} seconds; sleep {}"'
 
 . /usr/share/powerline/bindings/bash/powerline.sh
 
 export EDITOR='vim'
+export VISUAL='vim'
 
 eval "$(beet completion)"
+
+# setting tab width to 4
+tabs -4

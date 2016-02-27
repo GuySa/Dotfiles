@@ -48,14 +48,13 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
+let g:syntastic_javascript_checkers = ['jslint']
+let g:syntastic_python_checkers = ['pyflakes']
 
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
-let g:syntastic_javascript_checkers = ['jslint']
-let g:syntastic_python_checkers = ['pyflakes']
+let airline#extensions#tabline#show_buffers = 0
 
 nnoremap <silent> <CR> :let @/=""<CR><CR>
 nnoremap <F5> :w !clear;python %<CR>
