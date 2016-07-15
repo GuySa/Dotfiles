@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -halF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -120,7 +120,7 @@ fi
 export TERM=xterm-256color
 
 # I hate writing
-alias update="sudo apt-get -y update > /dev/null && sudo apt-get -y upgrade"
+alias update="sudo apt update > /dev/null && sudo apt upgrade"
 alias QOTD="nc mir.intstl.com 17"
 alias connect_to_pi="ssh -X pi@elysiumCV1.local"
 alias sleep_random_time='echo `awk -v num=$RANDOM "BEGIN { print (num / 10000) }"` | xargs -i bash -c "echo sleeping {} seconds; sleep {}"'
@@ -131,6 +131,16 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 eval "$(beet completion)"
+eval "$(pip completion --bash)"
 
 # setting tab width to 4
 tabs -4
+
+function Yon() {
+    while [ 1 ]; do 
+        sudo service network-manager stop
+        sudo service network-manager start
+        date +%R
+        sleep 2m
+    done
+}
