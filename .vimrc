@@ -58,7 +58,7 @@ let airline#extensions#tabline#show_buffers = 0
 
 nnoremap <silent> <CR> :let @/=""<CR><CR>
 nnoremap <F5> :w !clear;python %<CR>
-nnoremap <F8> :TagbarToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
 
 
 if has('gui_running')
