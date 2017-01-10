@@ -81,7 +81,7 @@ export TERM=xterm-256color
 # I hate writing
 alias update="sudo apt update > /dev/null && sudo apt upgrade"
 alias QOTD="nc mir.intstl.com 17"
-alias connect_to_pi="ssh -X pi@elysiumCV1.local"
+alias connect_to_pi="ssh -X pi@elysiumCV.local"
 alias sleep_random_time='echo `awk -v num=$RANDOM "BEGIN { print (num / 10000) }"` | xargs -i bash -c "echo sleeping {} seconds; sleep {}"'
 
 export EDITOR='vim'
