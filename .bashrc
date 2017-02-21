@@ -76,7 +76,7 @@ if ! shopt -oq posix; then
 fi
 
 # Fixes a problem I had with Neovim
-export TERM=xterm-256color
+export TERM="xterm-256color"
 
 # I hate writing
 alias update="sudo apt update > /dev/null && sudo apt upgrade"
