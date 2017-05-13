@@ -75,6 +75,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Setting go stuff
+export GOROOT="/usr/lib/go"
+export GOPATH="$GOROOT/bin"
+
 # Fixes a problem I had with Neovim
 export TERM="xterm-256color"
 
