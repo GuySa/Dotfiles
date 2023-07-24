@@ -91,8 +91,8 @@ alias sleep_random_time='echo `awk -v num=$RANDOM "BEGIN { print (num / 10000) }
 export EDITOR='vim'
 export VISUAL='vim'
 
-eval "$(cat ~/.beet_completion_output)"
-eval "$(cat ~/.pip_completion_bash_output)"
+# eval "$(cat ~/.beet_completion_output)"
+# eval "$(cat ~/.pip_completion_bash_output)"
 
 # setting tab width to 4
 tabs -4
